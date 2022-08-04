@@ -53,8 +53,8 @@ def get_seconds(h: int, m: int, s: int) -> Union[int, str]:
         result = "Ошибка. Допустимое значение для минут 0..59"
     elif s not in (range(60)):
         result = "Ошибка. Допустимое значение для секунд 0..59"
-
     return result
+
 
 if __name__ == '__main__':
     h_val = int(input('Введите количество часов h: '))

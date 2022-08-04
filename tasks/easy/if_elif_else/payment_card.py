@@ -31,7 +31,6 @@ def hide_card_numbers(card_number: str) -> str:
     return result
 
 
-
 if __name__ == '__main__':
     string = input('Введите номер платежной карты: ')
     print(f"Результат: {hide_card_numbers(string)}")
