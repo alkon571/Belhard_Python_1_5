@@ -22,10 +22,15 @@ def is_palindrome(check_str: str) -> bool:
     :param check_str: строка для проверки
     :type check_str: str
 
-    :return: True - палиндром, False - нет
+    :return: True - , False - нет
     :rtype: bool
     """
-    result = None
+    x = len(check_str)
+    revers_str = check_str[::-1]
+    if x > 0 and revers_str == check_str:
+        result = True
+    else:
+        result = False
     return result
 
 

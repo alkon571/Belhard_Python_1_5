@@ -23,21 +23,21 @@
 
 def is_divide_by(to_divide: int, divider_1: int, divider_2: int) -> bool:
     """Проверяет делится ли нацело to_divide нацело на divider_1 и divider_2
-
     :param to_divide: число для проверки
     :type to_divide: int
-
     :param divider_1: первый делитель
     :type divider_1: int
-
     :param divider_2: второй делитель
     :type divider_2: int
-
     :return: True, если делится на 2 числа, False, если нет
     :rtype: bool
     """
-    result = None
-    # TODO написать свой код здесь
+    a = to_divide % divider_1
+    b = to_divide % divider_2
+    if a or b:
+        result = False
+    else:
+        result = True
     return result
 
 
